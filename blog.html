@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    	<link rel="icon" href="./assets/img/cant see.jpeg" type="image/png" />
+	<link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL,GRAD@400,0,0" />
+</head>
+<body>
+    <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="sidebar">
+		<span></span>
+		<span></span>
+		<span></span>
+	</button>
+
+	<div class="layout">
+		<aside class="sidebar" id="sidebar">
+			<div class="brand">Lucas E Godoy</div>
+
+			<div class="sidebar-hero">
+				<img src="./assets/img/murisca.jpeg" alt="Foto de perfil da minha gata murisca deitada" />
+			</div>
+
+			<nav class="sidebar-nav" aria-label="Menu principal">
+				<a href="./index.html">Home</a>
+				<a class="is-active" href="./blog.html">Blog</a>
+				<a href="./contact.html">Contato</a>
+				<a href="./about.html">Eu</a>
+				<a href="#">Receitas</a>
+			</nav>
+
+
+			<div class="sidebar-social" aria-label="Redes sociais">
+				<a href="#"><span class="material-symbols-outlined" aria-hidden="true">public</span></a>
+				<a href="#"><span class="material-symbols-outlined" aria-hidden="true">share</span></a>
+				<a href="#"><span class="material-symbols-outlined" aria-hidden="true">groups</span></a>
+				<button class="theme-toggle-social" type="button" aria-label="Ativar tema Dracula" aria-pressed="false">
+					<span class="material-symbols-outlined theme-toggle-icon" aria-hidden="true">dark_mode</span>
+				</button>
+			</div>
+		</aside>
+
+    <div class="backdrop" hidden></div>
+
+		<main class="content">
+			<section class="posts-grid" aria-label="Posts recentes">
+				<a href="./dnd.html" target="_self">
+					<article class="post-card">
+						<img class="post-image" src="./assets/img/Dungeons_And_Dragons_Official_Poster.webp"
+							alt="Imagem de capa do post" />
+						<div class="post-body">
+							<p class="post-category">Marketing</p>
+							<h1>This Is A Standard Format Post.</h1>
+							<p class="post-excerpt">Duis ex ad cupidatat tempor Excepteur cillum cupidatat fugiat
+								nostrud cupidatat dolor sunt sint sit nisi est eu exercitation.</p>
+						</div>
+					</article>
+				</a>
+
+				<article class="post-card">
+					<img class="post-image" src="./assets/img/Dungeons_And_Dragons_Official_Poster.webp"
+						alt="Imagem de capa do post" />
+					<div class="post-body">
+						<p class="post-category">Photography</p>
+						<h1>Creative Ways To Frame Your Story.</h1>
+						<p class="post-excerpt">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+							et dolore magna aliqua.</p>
+					</div>
+				</article>
+
+				<article class="post-card">
+					<img class="post-image" src="./assets/img/Dungeons_And_Dragons_Official_Poster.webp"
+						alt="Imagem de capa do post" />
+					<div class="post-body">
+						<p class="post-category">Design</p>
+						<h1>How To Build A Clean Landing Page.</h1>
+						<p class="post-excerpt">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+							officia deserunt mollit anim.</p>
+					</div>
+				</article>
+				<article class="post-card">
+					<img class="post-image" src="./assets/img/Dungeons_And_Dragons_Official_Poster.webp"
+						alt="Imagem de capa do post" />
+					<div class="post-body">
+						<p class="post-category">Marketing</p>
+						<h1>This Is A Standard Format Post.</h1>
+						<p class="post-excerpt">Duis ex ad cupidatat tempor Excepteur cillum cupidatat fugiat nostrud
+							cupidatat dolor sunt sint sit nisi est eu exercitation.</p>
+					</div>
+				</article>
+
+				<article class="post-card">
+					<img class="post-image" src="./assets/img/Dungeons_And_Dragons_Official_Poster.webp"
+						alt="Imagem de capa do post" />
+					<div class="post-body">
+						<p class="post-category">Photography</p>
+						<h1>Creative Ways To Frame Your Story.</h1>
+						<p class="post-excerpt">Consectetur adipore et dolore magna aliqua.</p>
+					</div>
+				</article>
+
+				<article class="post-card">
+					<img class="post-image" src="./assets/img/Dungeons_And_Dragons_Official_Poster.webp"
+						alt="Imagem de capa do post" />
+					<div class="post-body">
+						<p class="post-category">Design</p>
+						<h1>How To Build A Clean Landing Page.</h1>
+						<p class="post-excerpt">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+							officia deserunt mollit anim.</p>
+					</div>
+				</article>
+			</section>
+		</main>
+	</div>
+
+	<script src="./js/main.js"></script>
+</body>
+</html>
