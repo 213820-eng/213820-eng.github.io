@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Paisagens pelo caminho - Blog Lucas Godoy</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL,GRAD@400,0,0" />
+    <link rel="icon" href="../assets/img/sun.png" type="image/png" />
+    <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body>
+    <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="sidebar">
+        <span></span><span></span><span></span>
+    </button>
+
+    <div class="layout">
+        <aside class="sidebar" id="sidebar">
+            <div class="brand">Lucas E Godoy</div>
+            <div class="sidebar-hero">
+                <img src="../assets/img/murisca.jpeg" alt="Foto de perfil da minha gata Murisca deitada" />
+            </div>
+            <nav class="sidebar-nav" aria-label="Menu principal">
+                <a href="../index.html">Home</a>
+                <a href="../blog.html">Blog</a>
+                <a href="../curriculum.html">Currículo</a>
+                <a href="../about.html">Eu</a>
+                <a href="../contact.html">Contato</a>
+                <a href="../receitas.html">Receitas</a>
+            </nav>
+            <div class="sidebar-social" aria-label="Redes sociais">
+                <a href="#"><span class="material-symbols-outlined" aria-hidden="true">public</span></a>
+                <a href="#"><span class="material-symbols-outlined" aria-hidden="true">share</span></a>
+                <a href="#"><span class="material-symbols-outlined" aria-hidden="true">groups</span></a>
+                <button class="theme-toggle-social" type="button" aria-label="Ativar tema Dracula" aria-pressed="false">
+                    <span class="material-symbols-outlined theme-toggle-icon" aria-hidden="true">dark_mode</span>
+                </button>
+            </div>
+        </aside>
+
+        <div class="backdrop" hidden></div>
+
+        <main class="content">
+            <div style="max-width: 600px; margin: 0 auto; padding: 20px;">
+                <h1 style="text-align: center; margin-bottom: 40px;">Paisagens fodas que eu vejo!</h1>
+                
+                <div class="insta-card" style="background: var(--bg-card, #fff); border: 1px solid #ddd; border-radius: 8px; margin-bottom: 40px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+                    <img src="../assets/img/bunito .jpeg" alt="Por do sol de inverno" style="width: 100%; display: block;" />
+                    <div style="padding: 15px; font-size: 15px; line-height: 1.5; color: var(--text-color, #333);">
+                     Saindo do trabalho no fim do dia. Welcome Winter! Ola horas extras kkkkkk.
+                    </div>
+                </div>
+
+                <div class="insta-card" style="background: var(--bg-card, #fff); border: 1px solid #ddd; border-radius: 8px; margin-bottom: 40px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+                    <img src="../assets/img/pordosolnubladinho.jpeg" alt="por do sol meio nublado" style="width: 100%; display: block;" />
+                    <div style="padding: 15px; font-size: 15px; line-height: 1.5; color: var(--text-color, #333);">
+                         O dia terminou frio e com nuvens bonitas por aqui hoje. 🌲
+                    </div>
+                </div>
+
+                 <div class="insta-card" style="background: var(--bg-card, #fff); border: 1px solid #ddd; border-radius: 8px; margin-bottom: 40px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+                    <img src="../assets/img/escurecerlindo.jpeg" alt=" céu roxo e rosa com lua minguante do escurecer lindo" style="width: 100%; display: block;" />
+                    <div style="padding: 15px; font-size: 15px; line-height: 1.5; color: var(--text-color, #333);">
+                         Fim do dia tbm (acho que tenho iperfoco) céu lindo mané.
+                    </div>
+                </div>
+
+                 <div class="insta-card" style="background: var(--bg-card, #fff); border: 1px solid #ddd; border-radius: 8px; margin-bottom: 40px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+                    <img src="../assets/img/ceudourado.jpeg" alt="ceu dourado do entardecer" style="width: 100%; display: block;" />
+                    <div style="padding: 15px; font-size: 15px; line-height: 1.5; color: var(--text-color, #333);">
+                         Esse entardecer dourado de hoje estava perfeito. As refletindo o brilho de uma estrela escondida como um espelho do oculto. kkkk filosofei.
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Voltar ao topo">
+        <span class="material-symbols-outlined">arrow_upward</span>
+    </button>
+    
+    <div class="fab-container" aria-label="Menu de Acessibilidade">
+        <button class="fab-main" aria-label="Abrir opções"><img src="../assets/img/eye.jpg" alt="Olho de dragao" /></button>
+        <div class="fab-options">
+            <button id="decrease-font" class="fab-btn"><span class="material-symbols-outlined">text_decrease</span></button>
+            <button id="increase-font" class="fab-btn"><span class="material-symbols-outlined">text_increase</span></button>
+            <button id="toggle-theme-fab" class="fab-btn"><span class="material-symbols-outlined theme-toggle-icon-fab">dark_mode</span></button>
+        </div>
+    </div>
+
+    <button id="back-btn" class="back-btn" aria-label="Voltar ou fechar página">
+        <span class="material-symbols-outlined">arrow_back</span>
+    </button>
+
+    <script src="../js/main.js"></script>
+
+</body>
+</html>

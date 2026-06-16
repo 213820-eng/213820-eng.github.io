@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Mousse de Maracujá - Blog Lucas Godoy</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL,GRAD@400,0,0" />
+    <link rel="icon" href="../assets/img/cant see.jpeg" type="image/png" />
+    <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body>
+    <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="sidebar">
+        <span></span><span></span><span></span>
+    </button>
+
+    <div class="layout">
+        <aside class="sidebar" id="sidebar">
+            <div class="brand">Lucas E Godoy</div>
+            <div class="sidebar-hero">
+                <img src="../assets/img/murisca.jpeg" alt="Foto de perfil da minha gata Murisca deitada" />
+            </div>
+            <nav class="sidebar-nav" aria-label="Menu principal">
+                <a href="../index.html">Home</a>
+                <a href="../blog.html">Blog</a>
+                <a href="../curriculum.html">Currículo</a>
+                <a href="../about.html">Eu</a>
+                <a href="../contact.html">Contato</a>
+                <a href="../receitas.html">Receitas</a>
+            </nav>
+            <div class="sidebar-social" aria-label="Redes sociais">
+                <a href="#"><span class="material-symbols-outlined" aria-hidden="true">public</span></a>
+                <a href="#"><span class="material-symbols-outlined" aria-hidden="true">share</span></a>
+                <a href="#"><span class="material-symbols-outlined" aria-hidden="true">groups</span></a>
+                <button class="theme-toggle-social" type="button" aria-label="Ativar tema Dracula" aria-pressed="false">
+                    <span class="material-symbols-outlined theme-toggle-icon" aria-hidden="true">dark_mode</span>
+                </button>
+            </div>
+        </aside>
+
+        <div class="backdrop" hidden></div>
+
+        <main class="content">
+            <article style="max-width: 700px; margin: 0 auto; padding: 20px;">
+                <p style="color: #666; text-transform: uppercase; font-size: 14px;">Culinária</p>
+                <h1>A receita do Mousse de Maracujá perfeito</h1>
+                <img src="../assets/img/musse.png" alt="Mousse de maracuja" style="width: 100%; border-radius: 8px; margin: 20px 0;" />
+                
+                <h3>Ingredientes:</h3>
+                <ul style="margin-bottom: 20px; padding-left: 20px;">
+                    <li>1 lata de leite condensado</li>
+                    <li>1 caixa de creme de leite</li>
+                    <li>1 xícara de suco concentrado de maracujá (puro)</li>
+                    <li>Sementes de maracujá para decorar (opcional)</li>
+                </ul>
+
+                <h3>Modo de Preparo:</h3>
+                <ol style="padding-left: 20px; line-height: 1.8;">
+                    <li>No liquidificador, adicione o leite condensado e o creme de leite. Bata por 1 minuto.</li>
+                    <li>Com o liquidificador ainda ligado, despeje o suco de maracujá aos poucos. Você vai notar a mágica acontecer: a mistura vai engrossar na hora!</li>
+                    <li>Despeje em um refratário ou tacinhas e leve à geladeira por no mínimo 4 horas. Decore com a polpa antes de servir.</li>
+                </ol>
+            </article>
+        </main>
+    </div>
+
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Voltar ao topo">
+        <span class="material-symbols-outlined">arrow_upward</span>
+    </button>
+    
+    <div class="fab-container" aria-label="Menu de Acessibilidade">
+        <button class="fab-main" aria-label="Abrir opções"><img src="../assets/img/eye.jpg" alt="Olho de dragao" /></button>
+        <div class="fab-options">
+            <button id="decrease-font" class="fab-btn"><span class="material-symbols-outlined">text_decrease</span></button>
+            <button id="increase-font" class="fab-btn"><span class="material-symbols-outlined">text_increase</span></button>
+            <button id="toggle-theme-fab" class="fab-btn"><span class="material-symbols-outlined theme-toggle-icon-fab">dark_mode</span></button>
+        </div>
+    </div>
+
+    <button id="back-btn" class="back-btn" aria-label="Voltar ou fechar página">
+        <span class="material-symbols-outlined">arrow_back</span>
+    </button>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minhas Receitas - Lucas E Godoy</title>
+    <link rel="icon" href="./assets/img/cantsee.jpeg" type="image/png" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL,GRAD@400,0,0" />
+</head>
+<body>
+    <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="sidebar">
+		<span></span>
+		<span></span>
+		<span></span>
+	</button>
+
+	<div class="layout">
+		<aside class="sidebar" id="sidebar">
+			<div class="brand">Lucas E Godoy</div>
+
+			<div class="sidebar-hero">
+				<img src="./assets/img/murisca.jpeg" alt="Foto de perfil da minha gata murisca deitada" />
+			</div>
+
+			<nav class="sidebar-nav" aria-label="Menu principal">
+				<a href="./index.html">Home</a>
+				<a href="./blog.html">Blog</a>
+				<a href="./curriculum.html">Currículo</a>
+				<a href="./about.html">Eu</a>
+				<a href="./contact.html">Contato</a>
+				<a class="is-active" href="./receitas.html">Receitas</a>
+			</nav>
+
+			<div class="sidebar-social" aria-label="Redes sociais">
+				<a href="#"><span class="material-symbols-outlined" aria-hidden="true">public</span></a>
+				<a href="#"><span class="material-symbols-outlined" aria-hidden="true">share</span></a>
+				<a href="#"><span class="material-symbols-outlined" aria-hidden="true">groups</span></a>
+				<button class="theme-toggle-social" type="button" aria-label="Ativar tema Dracula" aria-pressed="false">
+					<span class="material-symbols-outlined theme-toggle-icon" aria-hidden="true">dark_mode</span>
+				</button>
+			</div>
+		</aside>
+
+        <div class="backdrop" hidden></div>
+
+		<main class="content" style="padding: 40px; box-sizing: border-box; font-family: sans-serif;">
+			<section style="max-width: 800px; margin: 0 auto;">
+				
+				<header style="margin-bottom: 30px; border-bottom: 2px solid #eee; padding-bottom: 20px;">
+					<h1 style="font-size: 32px; margin: 0 0 10px 0; color: #111;">Minhas Receitas Favoritas</h1>
+					<p style="margin: 0; color: #555; font-size: 16px;">Algumas receitas que eu faço semana sim semana não</p>
+				</header>
+
+				<section style="margin-top: 20px;">
+					<ul style="list-style-type: none; padding: 0; line-height: 1.8; font-size: 18px;">
+						<li style="margin-bottom: 15px; padding: 15px; background: #f9f9f9; border-radius: 6px; border-left: 4px solid #1a1a1a;">
+							<a href="./receitas/moussemaracuja.html" style="color: #1a1a1a; text-decoration: none; font-weight: bold;">Mousse de Maracujá </a>
+						</li>
+						<li style="margin-bottom: 15px; padding: 15px; background: #f9f9f9; border-radius: 6px; border-left: 4px solid #1a1a1a;">
+							<a href="./receitas/nega-maluca.html" style="color: #1a1a1a; text-decoration: none; font-weight: bold;"> Nega Maluca</a>
+						</li>
+						<li style="margin-bottom: 15px; padding: 15px; background: #f9f9f9; border-radius: 6px; border-left: 4px solid #1a1a1a;">
+							<a href="./receitas/pao-de-queijo.html" style="color: #1a1a1a; text-decoration: none; font-weight: bold;">Pão de Queijo de Liquidificador</a>
+						</li>
+					</ul>
+				</section>
+
+			</section>
+		</main>
+	</div>
+
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Voltar ao topo">
+        <span class="material-symbols-outlined">arrow_upward</span>
+    </button>
+
+    <div class="fab-container" aria-label="Menu de Acessibilidade">
+        <button class="fab-main" aria-label="Abrir opções">
+            <img src="./assets/img/eye.jpg" alt="Olho de dragao" />
+        </button>
+        <div class="fab-options">
+            <button id="decrease-font" class="fab-btn" aria-label="Diminuir fonte">
+                <span class="material-symbols-outlined">text_decrease</span>
+            </button>
+            <button id="increase-font" class="fab-btn" aria-label="Aumentar fonte">
+                <span class="material-symbols-outlined">text_increase</span>
+            </button>
+            <button id="toggle-theme-fab" class="fab-btn" aria-label="Alternar tema">
+                <span class="material-symbols-outlined theme-toggle-icon-fab">dark_mode</span>
+            </button>
+        </div>
+    </div>
+	
+	<script src="./js/main.js"></script>
+</body>
+</html>

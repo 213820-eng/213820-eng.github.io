@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato</title>
+    <title>Contato - Lucas E Godoy</title>
     <link rel="stylesheet"
 		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL,GRAD@400,0,0" />
-	<link rel="icon" href="./assets/img/cant see.jpeg" type="image/png" />
+	<link rel="icon" href="./assets/img/cantsee.jpeg" type="image/png" />
 	<link rel="stylesheet" href="./css/styles.css" />
 </head>
 <body>
@@ -25,12 +25,13 @@
             </div>
 
             <nav class="sidebar-nav" aria-label="Menu principal">
-                <a href="./index.html">Home</a>
-                <a href="./blog.html">Blog</a>
-                <a class="is-active" href="#">Contato</a>
-                <a href="./about.html">Eu</a>
-                <a href="#">Receitas</a>
-            </nav>
+   				<a href="./index.html">Home</a>
+    			<a href="./blog.html">Blog</a>
+    			<a href="./curriculum.html">Currículo</a>
+    			<a href="./about.html">Eu</a>
+    			<a class="is-active" href="./contact.html">Contato</a>
+    			<a href="./receitas.html">Receitas</a>
+			</nav>
 
             <div class="sidebar-social" aria-label="Redes sociais">
                 <a href="#"><span class="material-symbols-outlined" aria-hidden="true">public</span></a>
@@ -53,42 +54,73 @@
            
             
             <section style="width: 100%; max-width: 320px;">
-                <form style="display: flex; flex-direction: column; align-items: center; width: 100;">
-                    
+                <form id="contact-form" novalidate style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+
                     <div style="margin-bottom: 20px; width: 100%; text-align: center;">
                         <label for="name" style="font-weight: bold; display: block; margin-bottom: 8px;">Nome:</label>
-                        <input type="text" required minlength="3" maxlength="100" placeholder="Digite seu nome" name="name" 
+                        <input type="text" id="name" required minlength="3" maxlength="100" placeholder="Digite seu nome" name="name"
                                style="padding: 10px; border-radius: 4px; border: 1px solid #ccc; width: 100%; box-sizing: border-box; font-size: 14px;">
+                        <span class="error-message" id="name-error" style="color: #c0392b; font-size: 12px; display: block; margin-top: 4px;"></span>
                     </div>
-                    
+
                     <div style="margin-bottom: 20px; width: 100%; text-align: center;">
                         <label for="email" style="font-weight: bold; display: block; margin-bottom: 8px;">Email:</label>
-                        <input type="email" required placeholder="@email.com" name="email" 
+                        <input type="email" id="email" required placeholder="seuemail@email.com" name="email"
                                style="padding: 10px; border-radius: 4px; border: 1px solid #ccc; width: 100%; box-sizing: border-box; font-size: 14px;">
+                        <span class="error-message" id="email-error" style="color: #c0392b; font-size: 12px; display: block; margin-top: 4px;"></span>
                     </div>
-                    
+
                     <div style="margin-bottom: 20px; width: 100%; text-align: center;">
                         <label for="telefone" style="font-weight: bold; display: block; margin-bottom: 8px;">Telefone:</label>
-                        <input type="number" name="telefone" required
+                        <input type="tel" id="telefone" name="telefone" required placeholder="(00) 00000-0000"
                                style="padding: 10px; border-radius: 4px; border: 1px solid #ccc; width: 100%; box-sizing: border-box; font-size: 14px;">
+                        <span class="error-message" id="telefone-error" style="color: #c0392b; font-size: 12px; display: block; margin-top: 4px;"></span>
                     </div>
-                    
-                    <div style="margin-bottom: 25px; width: 100%; text-align: center;">
-                        <label for="password" style="font-weight: bold; display: block; margin-bottom: 8px;">Senha:</label>
-                        <input type="password" placeholder="Digite seu password" name="password" required
-                               style="padding: 10px; border-radius: 4px; border: 1px solid #ccc; width: 100%; box-sizing: border-box; font-size: 14px;">
+
+                    <div style="margin-bottom: 20px; width: 100%; text-align: center;">
+                        <label for="mensagem" style="font-weight: bold; display: block; margin-bottom: 8px;">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" required minlength="10" rows="4" placeholder="Digite sua mensagem"
+                               style="padding: 10px; border-radius: 4px; border: 1px solid #ccc; width: 100%; box-sizing: border-box; font-size: 14px; resize: vertical;"></textarea>
+                        <span class="error-message" id="mensagem-error" style="color: #c0392b; font-size: 12px; display: block; margin-top: 4px;"></span>
                     </div>
-                    
+
                     <button type="submit" style="padding: 12px 40px; background-color: #1a1a1a; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; font-size: 15px; width: 100%;">
                         Enviar
                     </button>
+
+                    <p id="form-success" style="color: #1a7a1a; font-size: 14px; display: none; margin-top: 15px;">
+                        Mensagem enviada com sucesso!
+                    </p>
 
                 </form>
             </section>
         </main>
     </div>
 
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Voltar ao topo">
+        <span class="material-symbols-outlined">arrow_upward</span>
+    </button>
+    
+   <div class="fab-container" aria-label="Menu de Acessibilidade">
+        <button class="fab-main" aria-label="Abrir opções">
+            <img src="./assets/img/eye.jpg" alt="Olho de dragao" />
+        </button>
+        <div class="fab-options">
+            <button id="decrease-font" class="fab-btn" aria-label="Diminuir fonte">
+                <span class="material-symbols-outlined">text_decrease</span>
+            </button>
+            <button id="increase-font" class="fab-btn" aria-label="Aumentar fonte">
+                <span class="material-symbols-outlined">text_increase</span>
+            </button>
+            <button id="toggle-theme-fab" class="fab-btn" aria-label="Alternar tema">
+                <span class="material-symbols-outlined theme-toggle-icon-fab">dark_mode</span>
+            </button>
+        </div>
+    </div>
+
+   
 
         <script src="./js/main.js"></script>
+        <script src="./js/contactvalidation.js"></script>
 </body>
 </html>

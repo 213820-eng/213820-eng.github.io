@@ -1,121 +1,164 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
-    	<link rel="icon" href="./assets/img/cant see.jpeg" type="image/png" />
-	<link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet"
-		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL,GRAD@400,0,0" />
+    <link rel="icon" href="./assets/img/cantsee.jpeg" type="image/png" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL,GRAD@400,0,0" />
 </head>
 <body>
     <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="sidebar">
-		<span></span>
-		<span></span>
-		<span></span>
-	</button>
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
 
-	<div class="layout">
-		<aside class="sidebar" id="sidebar">
-			<div class="brand">Lucas E Godoy</div>
+    <div class="layout">
+        <aside class="sidebar" id="sidebar">
+            <div class="brand">Lucas E Godoy</div>
 
-			<div class="sidebar-hero">
-				<img src="./assets/img/murisca.jpeg" alt="Foto de perfil da minha gata murisca deitada" />
-			</div>
+            <div class="sidebar-hero">
+                <img src="./assets/img/murisca.jpeg" alt="Foto de perfil da minha gata murisca deitada" />
+            </div>
 
-			<nav class="sidebar-nav" aria-label="Menu principal">
-				<a href="./index.html">Home</a>
-				<a class="is-active" href="./blog.html">Blog</a>
-				<a href="./contact.html">Contato</a>
-				<a href="./about.html">Eu</a>
-				<a href="#">Receitas</a>
-			</nav>
+            <nav class="sidebar-nav" aria-label="Menu principal">
+                <a href="./index.html">Home</a>
+                <a class="is-active" href="#">Blog</a>
+                <a href="./curriculum.html">Currículo</a>
+                <a href="./about.html">Eu</a>
+                <a href="./contact.html">Contato</a>
+                <a href="./receitas.html">Receitas</a>
+            </nav>
 
+            <div class="sidebar-social" aria-label="Redes sociais">
+                <a href="#"><span class="material-symbols-outlined" aria-hidden="true">public</span></a>
+                <a href="#"><span class="material-symbols-outlined" aria-hidden="true">share</span></a>
+                <a href="#"><span class="material-symbols-outlined" aria-hidden="true">groups</span></a>
+                <button class="theme-toggle-social" type="button" aria-label="Ativar tema Dracula" aria-pressed="false">
+                    <span class="material-symbols-outlined theme-toggle-icon" aria-hidden="true">dark_mode</span>
+                </button>
+            </div>
+        </aside>
 
-			<div class="sidebar-social" aria-label="Redes sociais">
-				<a href="#"><span class="material-symbols-outlined" aria-hidden="true">public</span></a>
-				<a href="#"><span class="material-symbols-outlined" aria-hidden="true">share</span></a>
-				<a href="#"><span class="material-symbols-outlined" aria-hidden="true">groups</span></a>
-				<button class="theme-toggle-social" type="button" aria-label="Ativar tema Dracula" aria-pressed="false">
-					<span class="material-symbols-outlined theme-toggle-icon" aria-hidden="true">dark_mode</span>
-				</button>
-			</div>
-		</aside>
+        <div class="backdrop" hidden></div>
 
-    <div class="backdrop" hidden></div>
+        <main class="content">
+            <section class="posts-grid" aria-label="Catálogo de postagens">
+    
+                    <a href="./posts/post-anime.html" target="_blank" class="post-link">
+                        <article class="post-card">
+                            <img class="post-image" src="./assets/img/frierengruporg.jpg" />
+                            <div class="post-body">
+                                <p class="post-category">Animes</p>
+                                <h1>Frieren e a Jornada para o Além: O Tempo e as Relações</h1>
+                                <p class="post-excerpt">Uma das melhores produções recentes. Uma reflexão profunda sobre a brevidade do tempo, perdas e conexões humanas.</p>
+                            </div>
+                        </article>
+                    </a>
 
-		<main class="content">
-			<section class="posts-grid" aria-label="Posts recentes">
-				<a href="./dnd.html" target="_self">
-					<article class="post-card">
-						<img class="post-image" src="./assets/img/Dungeons_And_Dragons_Official_Poster.webp"
-							alt="Imagem de capa do post" />
-						<div class="post-body">
-							<p class="post-category">Marketing</p>
-							<h1>This Is A Standard Format Post.</h1>
-							<p class="post-excerpt">Duis ex ad cupidatat tempor Excepteur cillum cupidatat fugiat
-								nostrud cupidatat dolor sunt sint sit nisi est eu exercitation.</p>
-						</div>
-					</article>
-				</a>
+                    <a href="./posts/post-anime-bleach.html" target="_blank" class="post-link">
+                        <article class="post-card">
+                            <img class="post-image" src="./assets/img/unohana.jpeg" alt="Unohana, personagem do manga Bleach" />
+                            <div class="post-body">
+                                <p class="post-category">Animes</p>
+                                <h1>Bleach: Espadas, Estilo e o Mundo Espiritual</h1>
+                                <p class="post-excerpt">Conheça um poco da obra prima BLEACH um dos tres grandes. Iconico e Eterna obra. Inspiração para muitas outrs.</p>
+                            </div>
+                        </article>
+                    </a>
 
-				<article class="post-card">
-					<img class="post-image" src="./assets/img/Dungeons_And_Dragons_Official_Poster.webp"
-						alt="Imagem de capa do post" />
-					<div class="post-body">
-						<p class="post-category">Photography</p>
-						<h1>Creative Ways To Frame Your Story.</h1>
-						<p class="post-excerpt">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-							et dolore magna aliqua.</p>
-					</div>
-				</article>
+                    <a href="./posts/post-anime-naruto.html" target="_blank" class="post-link">
+                        <article class="post-card">
+                            <img class="post-image" src="./assets/img/valedofim.png" alt="Ninja" />
+                            <div class="post-body">
+                                <p class="post-category">Animes</p>
+                                <h1>Naruto: A Força dos Laços e da Superação</h1>
+                                <p class="post-excerpt">Uma jornada emocionante sobre determinação, superação do preconceito e o verdadeiro valor da amizade.</p>
+                            </div>
+                        </article>
+                    </a>
 
-				<article class="post-card">
-					<img class="post-image" src="./assets/img/Dungeons_And_Dragons_Official_Poster.webp"
-						alt="Imagem de capa do post" />
-					<div class="post-body">
-						<p class="post-category">Design</p>
-						<h1>How To Build A Clean Landing Page.</h1>
-						<p class="post-excerpt">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-							officia deserunt mollit anim.</p>
-					</div>
-				</article>
-				<article class="post-card">
-					<img class="post-image" src="./assets/img/Dungeons_And_Dragons_Official_Poster.webp"
-						alt="Imagem de capa do post" />
-					<div class="post-body">
-						<p class="post-category">Marketing</p>
-						<h1>This Is A Standard Format Post.</h1>
-						<p class="post-excerpt">Duis ex ad cupidatat tempor Excepteur cillum cupidatat fugiat nostrud
-							cupidatat dolor sunt sint sit nisi est eu exercitation.</p>
-					</div>
-				</article>
+                    <a href="./posts/post-anime-fulmetal.html" target="_blank" class="post-link">
+                        <article class="post-card">
+                            <img class="post-image" src="./assets/img/nina.png" alt="Alquimia" />
+                            <div class="post-body">
+                                <p class="post-category">Animes</p>
+                                <h1>Fullmetal Alchemist: A Equivalência Perfeita</h1>
+                                <p class="post-excerpt">A incrível jornada dos irmãos Elric quebrando tabus e buscando respostas através da Lei da Troca Equivalente.</p>
+                            </div>
+                        </article>
+                    </a>
 
-				<article class="post-card">
-					<img class="post-image" src="./assets/img/Dungeons_And_Dragons_Official_Poster.webp"
-						alt="Imagem de capa do post" />
-					<div class="post-body">
-						<p class="post-category">Photography</p>
-						<h1>Creative Ways To Frame Your Story.</h1>
-						<p class="post-excerpt">Consectetur adipore et dolore magna aliqua.</p>
-					</div>
-				</article>
+                    <a href="./posts/post-paisagens.html" target="_blank" class="post-link">
+                        <article class="post-card">
+                            <img class="post-image" src="./assets/img/ceudourado.jpeg" alt="céu dourado do entardecer" />
+                            <div class="post-body">
+                                <p class="post-category">Fotografia</p>
+                                <h1>Minhas capturas: Paisagens pelo caminho</h1>
+                                <p class="post-excerpt">Deixe-me agracialos com minhas fotos do Céu.</p>
+                            </div>
+                        </article>
+                    </a>
 
-				<article class="post-card">
-					<img class="post-image" src="./assets/img/Dungeons_And_Dragons_Official_Poster.webp"
-						alt="Imagem de capa do post" />
-					<div class="post-body">
-						<p class="post-category">Design</p>
-						<h1>How To Build A Clean Landing Page.</h1>
-						<p class="post-excerpt">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-							officia deserunt mollit anim.</p>
-					</div>
-				</article>
-			</section>
-		</main>
-	</div>
+                    <a href="./receitas/moussemaracuja.html" target="_blank" class="post-link">
+                        <article class="post-card">
+                            <img class="post-image" src="./assets/img/musse.png" alt="Musse de maracuja" />
+                            <div class="post-body">
+                                <p class="post-category">Culinária</p>
+                                <h1>A receita do Mousse de Maracujá perfeito</h1>
+                                <p class="post-excerpt">Feita com leite condensado, creme de leite e suco concentrado, essa mousse aerada é ideal para o domingo.</p>
+                            </div>
+                        </article>
+                    </a>
 
-	<script src="./js/main.js"></script>
+                    <a href="./posts/post-murisca.html" target="_blank" class="post-link">
+                        <article class="post-card">
+                            <img class="post-image" src="./assets/img/murisca.jpeg" alt="Foto da gata Murisca que é murisca" />
+                            <div class="post-body">
+                                <p class="post-category">Pets</p>
+                                <h1>Murisca: A gata gorda dengosa</h1>
+                                <p class="post-excerpt">Conheça um pouco mais sobre a minha companheira felina que adora inspecionar meus códigos de Front-End.</p>
+                            </div>
+                        </article>
+                    </a>
+
+                    <a href="./posts/post-cachorros.html" target="_blank" class="post-link">
+                        <article class="post-card">
+                            <img class="post-image" src="./assets/img/cachorro2.jpeg" alt="Cachorros assustado" />
+                            <div class="post-body">
+                                <p class="post-category">Pets</p>
+                                <h1>Meus Cães: Energia pura e bagunça diária</h1>
+                                <p class="post-excerpt">Histórias, travessuras e as manias mais engraçadas dos meus cachorros que transformam a rotina focada de estudos.</p>
+                            </div>
+                        </article>
+                    </a>
+                </section>
+        </main>
+    </div>
+
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Voltar ao topo">
+        <span class="material-symbols-outlined">arrow_upward</span>
+    </button>
+
+    <div class="fab-container" aria-label="Menu de Acessibilidade">
+        <button class="fab-main" aria-label="Abrir opções">
+            <img src="./assets/img/eye.jpg" alt="Olho de dragao" />
+        </button>
+        <div class="fab-options">
+            <button id="decrease-font" class="fab-btn" aria-label="Diminuir fonte">
+                <span class="material-symbols-outlined">text_decrease</span>
+            </button>
+            <button id="increase-font" class="fab-btn" aria-label="Aumentar fonte">
+                <span class="material-symbols-outlined">text_increase</span>
+            </button>
+            <button id="toggle-theme-fab" class="fab-btn" aria-label="Alternar tema">
+                <span class="material-symbols-outlined theme-toggle-icon-fab">dark_mode</span>
+            </button>
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
 </body>
 </html>

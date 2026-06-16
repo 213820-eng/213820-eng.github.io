@@ -1,105 +1,131 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 
 <head>
-	<title>Blog Lucas Godoy</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet"
-		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL,GRAD@400,0,0" />
-	<link rel="icon" href="./assets/img/cant see.jpeg" type="image/png" />
-	<link rel="stylesheet" href="./css/styles.css" />
+    <title>Blog Lucas Godoy</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL,GRAD@400,0,0" />
+    <link rel="icon" href="./assets/img/cantsee.jpeg" type="image/png" />
+    <link rel="stylesheet" href="./css/styles.css" />
 </head>
 
 <body>
-	<button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="sidebar">
-		<span></span>
-		<span></span>
-		<span></span>
-	</button>
+    <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="sidebar">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
 
-	<div class="layout">
-		<aside class="sidebar" id="sidebar">
-			<div class="brand">Lucas E Godoy</div>
+    <div class="layout">
+        <aside class="sidebar" id="sidebar">
+            <div class="brand">Lucas Godoy</div>
 
-			<div class="sidebar-hero">
-				<img src="./assets/img/murisca.jpeg" alt="Foto de perfil da minha gata murisca deitada" />
-			</div>
+            <div class="sidebar-hero">
+                <img src="./assets/img/murisca.jpeg" alt="Foto de perfil da minha gata Murisca deitada" />
+            </div>
 
-			<nav class="sidebar-nav" aria-label="Menu principal">
-				<a class="is-active" href="#">Home</a>
-				<a href="./blog.html">Blog</a>
-				<a href="./contact.html">Contato</a>
-				<a href="./about.html">Eu</a>
-				<a href="#">Receitas</a>
-			</nav>
+            <nav class="sidebar-nav" aria-label="Menu principal">
+                <a class="is-active" href="#">Home</a>
+                <a href="./blog.html">Blog</a>
+                <a href="./curriculum.html">Currículo</a>
+                <a href="./about.html">Eu</a>
+                <a href="./contact.html">Contato</a>
+                <a href="./receitas.html">Receitas</a>
+            </nav>
 
+            <div class="sidebar-social" aria-label="Redes sociais">
+                <a href="#"><span class="material-symbols-outlined" aria-hidden="true">public</span></a>
+                <a href="#"><span class="material-symbols-outlined" aria-hidden="true">share</span></a>
+                <a href="#"><span class="material-symbols-outlined" aria-hidden="true">groups</span></a>
+                <button class="theme-toggle-social" type="button" aria-label="Ativar tema Dracula" aria-pressed="false">
+                    <span class="material-symbols-outlined theme-toggle-icon" aria-hidden="true">dark_mode</span>
+                </button>
+            </div>
+        </aside>
 
-			<div class="sidebar-social" aria-label="Redes sociais">
-				<a href="#"><span class="material-symbols-outlined" aria-hidden="true">public</span></a>
-				<a href="#"><span class="material-symbols-outlined" aria-hidden="true">share</span></a>
-				<a href="#"><span class="material-symbols-outlined" aria-hidden="true">groups</span></a>
-				<button class="theme-toggle-social" type="button" aria-label="Ativar tema Dracula" aria-pressed="false">
-					<span class="material-symbols-outlined theme-toggle-icon" aria-hidden="true">dark_mode</span>
-				</button>
-			</div>
-		</aside>
+        <div class="backdrop" hidden></div>
 
-		<div class="backdrop" hidden></div>
+        <main class="content">
+            <div class="home-container">
+                
+                <section class="welcome-section">
+                    <h1>Bem-vindo ao meu espaço!</h1>
+                    <p>Olá! Meu nome é Lucas Eduardo de Godoy. Criei esta página para compartilhar com aqueles interessados em saber um pouco sobre mim e também, é claro, compartilhar um pouquinho sobre a minha vida. Good luck in your journey about me! Se você quiser ver mais, recomendo o "Eu".</p>
+                </section>
 
-		<main class="content">
-			<section class="posts-grid" aria-label="Posts recentes">
-				 
-				<a>
-					yk
-				</a>
-				<a>
-					ygukyjuh
-				</a>
-				<a>
-					iuoyçilukj
-				</a>
-				<a></a>
-				<div >
-					     <h2>Ultimos Posts</h2>
-						 <a>Veja aqui uma prévia dos ultimos posts</a>
-				</div>
-				<a></a>
-				
-				<a href="dnd" target="_self">
-					<article class="post-card">
-								<div class="post-body">
-							<p class="post-category">Marketing</p>
-							<h1>This Is A Standard Format Post.</h1>
-							<p class="post-excerpt">Duis ex ad cupidatat tempor Excepteur cillum cupidatat fugiat
-								nostrud cupidatat dolor sunt sint sit nisi est eu exercitation.</p>
-						</div>
-					</article>
-				</a>
-               
-				<article class="post-card">
-					<div class="post-body">
-						<p class="post-category">Photography</p>
-						<h1>Creative Ways To Frame Your Story.</h1>
-						<p class="post-excerpt">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-							et dolore magna aliqua.</p>
-					</div>
-				</article>
+                <h2 class="section-title">Últimos Posts</h2>
+                
+                <section class="posts-grid" aria-label="Posts recentes">
+                    
+                    <a href="./posts/post-anime-bleach.html" target="_blank" class="post-link">
+                        <article class="post-card">
+                            <img src="./assets/img/unohana.jpeg" alt="Unohana, personagem do manga Bleach" class="post-image" />
+                            <div class="post-body">
+                                <p class="post-category">Animes</p>
+                                <h1>Bleach: Espadas, Estilo e o Mundo Espiritual</h1>
+                                <p class="post-excerpt">Conheça um poco da obra prima BLEACH um dos tres grandes. Iconico e Eterna obra. Inspiração para muitas outrs.</p>
+                            </div>
+                        </article>
+                    </a>
 
-				<article class="post-card">
-					<div class="post-body">
-						<p class="post-category">Design</p>
-						<h1>How To Build A Clean Landing Page.</h1>
-						<p class="post-excerpt">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-							officia deserunt mollit anim.</p>
-					</div>
-				</article>
+                    <a href="./posts/post-paisagens.html" target="_blank" class="post-link">
+                        <article class="post-card">
+                            <img class="post-image" src="./assets/img/ceudourado.jpeg" alt="Céu dourado do entardecer" />
+                            <div class="post-body">
+                                <p class="post-category">Fotografia</p>
+                                <h1>Minhas capturas: Paisagens pelo caminho</h1>
+                                <p class="post-excerpt">Deixe-me agracialos com minhas fotos do Céu.</p>
+                            </div>
+                        </article>
+                    </a>
+                    
+                    <a href="./receitas/moussemaracuja.html" target="_blank" class="post-link">
+                        <article class="post-card">
+                            <img class="post-image" src="./assets/img/musse.png" alt="Musse de matacuja" />
+                            <div class="post-body">
+                                <p class="post-category">Culinária</p>
+                                <h1>A receita do Mousse de Maracujá perfeito</h1>
+                                <p class="post-excerpt">Uma sobremesa clássica, rápida e refrescante para surpreender a sua família no próximo almoço de domingo.</p>
+                            </div>
+                        </article>
+                    </a>
 
-			</section>
-		</main>
-	</div>
+                </section>
 
-	<script src="./js/main.js"></script>
+                <div class="blog-redirect-caption" style="text-align: center; margin: 40px 0 20px 0;">
+                    <p style="font-size: 16px; color: #555; font-style: italic;">
+                        Visite a aba <a href="./blog.html" style="color: #1a1a1a; font-weight: bold; text-decoration: underline;">Blog</a> para ver todo o catálogo!
+                    </p>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Voltar ao topo">
+        <span class="material-symbols-outlined">arrow_upward</span>
+    </button>
+    
+    <div class="fab-container" aria-label="Menu de Acessibilidade">
+        <button class="fab-main" aria-label="Abrir opções">
+            <img src="./assets/img/eye.jpg" alt="Olho de dragao" />
+        </button>
+        <div class="fab-options">
+            <button id="decrease-font" class="fab-btn" aria-label="Diminuir fonte">
+                <span class="material-symbols-outlined">text_decrease</span>
+            </button>
+            <button id="increase-font" class="fab-btn" aria-label="Aumentar fonte">
+                <span class="material-symbols-outlined">text_increase</span>
+            </button>
+            <button id="toggle-theme-fab" class="fab-btn" aria-label="Alternar tema">
+                <span class="material-symbols-outlined theme-toggle-icon-fab">dark_mode</span>
+            </button>
+        </div>
+    </div>
+
+   
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

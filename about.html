@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre Mim</title>
-    	<link rel="icon" href="./assets/img/cant see.jpeg" type="image/png" />
-	<link rel="stylesheet" href="./css/styles.css" />
+    <title>Sobre Mim - Lucas E Godoy</title>
+    <link rel="icon" href="./assets/img/cantsee.jpeg" type="image/png" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet"
 		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL,GRAD@400,0,0" />
 </head>
@@ -25,13 +25,13 @@
 			</div>
 
 			<nav class="sidebar-nav" aria-label="Menu principal">
-				<a href="./index.html">Home</a>
-				<a href="./blog.html">Blog</a>
-				<a href="./contact.html">Contato</a>
-				<a class="is-active" href="#">Eu</a>
-				<a href="#">Receitas</a>
+    			<a href="./index.html">Home</a>
+    			<a href="./blog.html">Blog</a>
+    			<a href="./curriculum.html">Currículo</a>
+    			<a class="is-active" href="#">Eu</a>
+    			<a href="./contact.html">Contato</a>
+    			<a href="./receitas.html">Receitas</a>
 			</nav>
-
 
 			<div class="sidebar-social" aria-label="Redes sociais">
 				<a href="#"><span class="material-symbols-outlined" aria-hidden="true">public</span></a>
@@ -43,11 +43,45 @@
 			</div>
 		</aside>
 
-    <div class="backdrop" hidden></div>
+		<div class="backdrop" hidden></div>
 
+		<main class="content">
+    		<article style="max-width: 800px; margin: 0 auto; padding: 20px;">
+    	 	   	<h1 style="font-size: 32px; margin-bottom: 20px;">Sobre Mim</h1>
 
-    <div>
-        kvjbçvkrgregbwvdbvWFBEÇLNVSFBejfnlvm jvkemçsdfjeknfejkdanvsfjdaknvjsbvdkndbjnvkbfvdnkhdfjknvbfndkvf
+    	 	   	<img src="./assets/img/murisca.jpeg" alt="Foto da minha gata Murisca"
+    	 	   		style="max-width: 100%; border-radius: 8px; margin-bottom: 20px;" />
+
+        		<p style="font-size: 18px; line-height: 1.8;">
+           	 		Olá! Meu nome é Lucas Eduardo de Godoy. Nasci em Marau, RS, no dia 28 de setembro de 2007, mas antes mesmo de completar meu primeiro ano de vida, eu e meus pais, Antonio Marcos de Godoy e Silvane Fatima Smolarek, nos mudamos para Santo Antônio do Palma, RS, para ficarmos mais perto dos meus avós maternos.<br><br>
+
+					Atualmente, sou estudante de Análise e Desenvolvimento de Sistemas (ADS) na Universidade de Passo Fundo (UPF), curso que iniciei este ano e estou adorando. Concluí meu Ensino Médio na Escola Padre Aneto Bogni, uma instituição muito boa pela qual tenho muito carinho. Nas horas vagas, sou um grande entusiasta da cultura geek, com muito interesse em animes, mangás, light novels e afins.<br><br>
+
+					Minha trajetória profissional começou em 2023, trabalhando aos sábados como garçom no restaurante Girasol. Depois disso, adquiri bastante experiência na área de granjas: trabalhei em uma granja de ovos durante um lote inteiro e fui auxiliar de gerente em uma granja de suínos por alguns meses. Em setembro de 2024, comecei a trabalhar na Destak Maravalhas operando máquinas, onde fiquei até o fim de 2025. Mais recentemente, desde o dia 5 de janeiro de 2026, trabalho com o Vinicius Tagliari, atuando basicamente como o responsável pelo RH de suas duas granjas de suínos e como assistente na granja de aves.
+        		</p>
+    		</article>
+		</main>
+	</div>
+
+	<button id="scrollToTop" class="scroll-to-top" aria-label="Voltar ao topo">
+        <span class="material-symbols-outlined">arrow_upward</span>
+    </button>
+
+	<div class="fab-container" aria-label="Menu de Acessibilidade">
+        <button class="fab-main" aria-label="Abrir opções">
+            <img src="./assets/img/eye.jpg" alt="Olho de dragao" />
+        </button>
+        <div class="fab-options">
+            <button id="decrease-font" class="fab-btn" aria-label="Diminuir fonte">
+                <span class="material-symbols-outlined">text_decrease</span>
+            </button>
+            <button id="increase-font" class="fab-btn" aria-label="Aumentar fonte">
+                <span class="material-symbols-outlined">text_increase</span>
+            </button>
+            <button id="toggle-theme-fab" class="fab-btn" aria-label="Alternar tema">
+                <span class="material-symbols-outlined theme-toggle-icon-fab">dark_mode</span>
+            </button>
+        </div>
     </div>
 
      <script src="./js/main.js"></script>

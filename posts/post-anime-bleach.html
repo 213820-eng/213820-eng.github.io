@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Resenha: Bleach - Blog Lucas Godoy</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL,GRAD@400,0,0" />
+    <link rel="icon" href="../assets/img/hogyoku.png" type="image/png" />
+    <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body>
+    <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="sidebar">
+        <span></span><span></span><span></span>
+    </button>
+
+    <div class="layout">
+        <aside class="sidebar" id="sidebar">
+            <div class="brand">Lucas E Godoy</div>
+            <div class="sidebar-hero">
+                <img src="../assets/img/murisca.jpeg" alt="Foto de perfil da minha gata Murisca deitada" />
+            </div>
+            <nav class="sidebar-nav" aria-label="Menu principal">
+                <a href="../index.html">Home</a>
+                <a href="../blog.html">Blog</a>
+                <a href="../curriculum.html">Currículo</a>
+                <a href="../about.html">Eu</a>
+                <a href="../contact.html">Contato</a>
+                <a href="../receitas.html">Receitas</a>
+            </nav>
+            <div class="sidebar-social" aria-label="Redes sociais">
+                <a href="#"><span class="material-symbols-outlined" aria-hidden="true">public</span></a>
+                <a href="#"><span class="material-symbols-outlined" aria-hidden="true">share</span></a>
+                <a href="#"><span class="material-symbols-outlined" aria-hidden="true">groups</span></a>
+                <button class="theme-toggle-social" type="button" aria-label="Ativar tema Dracula" aria-pressed="false">
+                    <span class="material-symbols-outlined theme-toggle-icon" aria-hidden="true">dark_mode</span>
+                </button>
+            </div>
+        </aside>
+
+        <div class="backdrop" hidden></div>
+
+        <main class="content">
+            <article style="max-width: 800px; margin: 0 auto; padding: 20px;">
+                <p class="post-category">Animes</p>
+                <h1 style="font-size: 32px; margin-bottom: 20px;">Bleach: Espadas, Estilo e o Mundo Espiritual</h1>
+                <img src="../assets/img/unohana.jpeg" alt="Unohana, personagem do manga Bleach" style="width: 100%; border-radius: 8px; margin-bottom: 30px;" />
+                
+                <div style="line-height: 1.8; font-size: 17px;">
+                    <p>Oi pessoal, tudo bem? Quero apresentar uma das maiore sobras primas da hitória dos animes: Bleach!</p>
+                    
+                    <blockquote style="background: var(--surface-strong); padding: 15px; border-left: 5px solid var(--category-text); margin: 20px 0; border-radius: 4px;">
+                        <strong>Sinopse:</strong> Ichigo Kurosaki é um estudante de ensino médio rebelde que tem a capacidade de ver fantasmas. Sua vida muda drasticamente quando ele conhece Rukia Kuchiki, uma Ceifeira de Almas (Shinigami). Ao ser ferida defendendo a família de Ichigo de um monstro espiritual conhecido como Hollow, Rukia transfere seus poderes para ele, transformando-o em um Shinigami substituto.
+                    </blockquote>
+
+                    <p>Se eu tiver que definir Bleach,em poucas palavras, seria peak, trilha sonora esplendida desing incrivel e história praticamente perfeita. O design dos personagens criados por Tite Kubo, as transformações de espadas (as icônicas Shikai e Bankai) e o sistema de facções da Sociedade das Almas são impecáveis.</p>
+                    
+                    <p>A saga do Resgate da Rukia continua sendo um dos melhores arcos de invasão de toda a história dos animes de combate. Além disso, o retorno recente com a adaptação da *Guerra Sangrenta dos Mil Anos* elevou a animação a um nível cinematográfico inacreditável, fazendo qualquer fã antigo se arrepiar. Vou deixar alguns paineis e poemas do Sensei Kubo abaixo.</p>
+                    
+                    <img src="../assets/img/zaraki.jpeg" alt="Zaraki, personagem do manga Bleach" style="width: 100%; border-radius: 8px; margin-bottom: 30px;" />
+                    <img src="../assets/img/poema47.jpeg" alt="Poema 47, poema de capa do volume 47 do manga Bleach" style="width: 100%; border-radius: 8px; margin-bottom: 30px;" />
+                    <img src="../assets/img/poema 34.jpeg" alt="Poema 34, poema de capa do volume 34 do manga Bleach" style="width: 100%; border-radius: 8px; margin-bottom: 30px;" />
+                    
+                    <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 30px 0;">
+                    
+                    <h3 style="margin-bottom: 10px;">Ficha Técnica</h3>
+                    <ul style="list-style: none; padding: 0; font-size: 15px; color: var(--muted-text);">
+                        <li><strong>Título original:</strong> Bleach / Thousand-Year Blood War</li>
+                        <li><strong>Ano de lançamento:</strong> 2004 / 2022</li>
+                        <li><strong>Direção:</strong> Noriyuki Abe / Tomohisa Taguchi</li>
+                        <li><strong>Criador original:</strong> Tite Kubo (Deus Kubo)</li>
+                    </ul>
+                </div>
+            </article>
+        </main>
+    </div>
+
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Voltar ao topo">
+        <span class="material-symbols-outlined">arrow_upward</span>
+    </button>
+    
+    <div class="fab-container" aria-label="Menu de Acessibilidade">
+        <button class="fab-main" aria-label="Abrir opções"><img src="../assets/img/eye.jpg" alt="Olho de dragao" /></button>
+        <div class="fab-options">
+            <button id="decrease-font" class="fab-btn"><span class="material-symbols-outlined">text_decrease</span></button>
+            <button id="increase-font" class="fab-btn"><span class="material-symbols-outlined">text_increase</span></button>
+            <button id="toggle-theme-fab" class="fab-btn"><span class="material-symbols-outlined theme-toggle-icon-fab">dark_mode</span></button>
+        </div>
+    </div>
+
+    <button id="back-btn" class="back-btn" aria-label="Voltar ou fechar página">
+        <span class="material-symbols-outlined">arrow_back</span>
+    </button>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

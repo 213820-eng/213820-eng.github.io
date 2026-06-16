@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo - Lucas E Godoy</title>
+    <link rel="icon" href="./assets/img/cantsee.jpeg" type="image/png" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL,GRAD@400,0,0" />
+</head>
+<body>
+    <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="sidebar">
+		<span></span>
+		<span></span>
+		<span></span>
+	</button>
+
+	<div class="layout">
+		<aside class="sidebar" id="sidebar">
+			<div class="brand">Lucas E Godoy</div>
+
+			<div class="sidebar-hero">
+				<img src="./assets/img/murisca.jpeg" alt="Foto de perfil da minha gata murisca deitada" />
+			</div>
+
+			<nav class="sidebar-nav" aria-label="Menu principal">
+				<a href="./index.html">Home</a>
+				<a href="./blog.html">Blog</a>
+				<a class="is-active" href="./curriculum.html">Currículo</a>
+				<a href="./about.html">Eu</a>
+				<a href="./contact.html">Contato</a>
+				<a href="./receitas.html">Receitas</a>
+			</nav>
+
+			<div class="sidebar-social" aria-label="Redes sociais">
+				<a href="#"><span class="material-symbols-outlined" aria-hidden="true">public</span></a>
+				<a href="#"><span class="material-symbols-outlined" aria-hidden="true">share</span></a>
+				<a href="#"><span class="material-symbols-outlined" aria-hidden="true">groups</span></a>
+				<button class="theme-toggle-social" type="button" aria-label="Ativar tema Dracula" aria-pressed="false">
+					<span class="material-symbols-outlined theme-toggle-icon" aria-hidden="true">dark_mode</span>
+				</button>
+			</div>
+		</aside>
+
+        <div class="backdrop" hidden></div>
+
+		<main class="content" style="padding: 40px; box-sizing: border-box; font-family: sans-serif;">
+			<section style="max-width: 800px; margin: 0 auto;">
+				
+				<header style="margin-bottom: 30px; border-bottom: 2px solid #eee; padding-bottom: 20px;">
+					<h1 style="font-size: 32px; margin: 0 0 10px 0; color: #111;">Meu Currículo</h1>
+					<p style="margin: 0; color: #555; font-size: 16px;">Estudante de Analise e Desenvolvimento de Software</p>
+				</header>
+
+				<section style="margin-bottom: 40px;">
+					<h2 style="font-size: 22px; color: #222; margin-bottom: 15px;">Experiência Profissional</h2>
+					<ul style="padding-left: 20px; line-height: 1.6;">
+						<style>
+							li::marker { color: #1a1a1a; }
+						</style>
+						<li style="margin-bottom: 20px;">
+							<strong>Auxiliar de Produção</strong> — Operando maquina na Destak Maravalhas. (2024-2025)
+							<p style="margin: 5px 0 0 0; color: #666;">trabalhei operando a maquina de enfardar a maravalha</p>
+						</li>
+						<li style="margin-bottom: 20px;">
+							<strong>Granjas Vinicius Tagliari</strong> — Auxiliar de Escritório (2026 - Atual)
+							<p style="margin: 5px 0 0 0; color: #666;">Faço toda a parte digital das Granjas com BRF, etc.</p>
+						</li>
+					</ul>
+				</section>
+
+				<section style="margin-bottom: 40px;">
+					<h2 style="font-size: 22px; color: #222; margin-bottom: 15px;">Formação Acadêmica</h2>
+					<table style="width: 100%; border-collapse: collapse; margin-top: 10px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+						<thead>
+							<tr style="background-color: #1a1a1a; color: white;">
+								<th style="padding: 12px; text-align: left; font-size: 14px;">Curso / Instituição</th>
+								<th style="padding: 12px; text-align: left; font-size: 14px;">Período</th>
+								<th style="padding: 12px; text-align: left; font-size: 14px;">Status</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr style="border-bottom: 1px solid #ddd;">
+								<td style="padding: 12px; font-size: 14px; color: #333;">Analise e Desenvolvimento de Software — Universidade de Passo Fundo (UPF)</td>
+								<td style="padding: 12px; font-size: 14px; color: #333;">2026 - 2028</td>
+								<td style="padding: 12px; font-size: 14px; color: #333;">Em andamento</td>
+							</tr>
+							<tr style="border-bottom: 1px solid #ddd;">
+								<td style="padding: 12px; font-size: 14px; color: #333;">Ensino Médio — Escola Padre Aneto Bogni</td>
+								<td style="padding: 12px; font-size: 14px; color: #333;">2019 - 2025</td>
+								<td style="padding: 12px; font-size: 14px; color: #333;">Concluído</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+
+			</section>
+		</main>
+	</div>
+
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Voltar ao topo">
+        <span class="material-symbols-outlined">arrow_upward</span>
+    </button>
+
+    <div class="fab-container" aria-label="Menu de Acessibilidade">
+        <button class="fab-main" aria-label="Abrir opções">
+            <img src="./assets/img/eye.jpg" alt="Olho de dragao" />
+        </button>
+        <div class="fab-options">
+            <button id="decrease-font" class="fab-btn" aria-label="Diminuir fonte">
+                <span class="material-symbols-outlined">text_decrease</span>
+            </button>
+            <button id="increase-font" class="fab-btn" aria-label="Aumentar fonte">
+                <span class="material-symbols-outlined">text_increase</span>
+            </button>
+            <button id="toggle-theme-fab" class="fab-btn" aria-label="Alternar tema">
+                <span class="material-symbols-outlined theme-toggle-icon-fab">dark_mode</span>
+            </button>
+        </div>
+    </div>
+
+
+
+	<script src="./js/main.js"></script>
+</body>
+</html>

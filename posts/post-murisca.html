@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Murisca - Blog Lucas Godoy</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL,GRAD@400,0,0" />
+    <link rel="icon" href="../assets/img/pexecomfucio.jpeg" type="image/png" />
+    <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body>
+    <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="sidebar">
+        <span></span><span></span><span></span>
+    </button>
+
+    <div class="layout">
+        <aside class="sidebar" id="sidebar">
+            <div class="brand">Lucas E Godoy</div>
+            <div class="sidebar-hero">
+                <img src="../assets/img/murisca.jpeg" alt="Foto de perfil da minha gata Murisca deitada" />
+            </div>
+            <nav class="sidebar-nav" aria-label="Menu principal">
+                <a href="../index.html">Home</a>
+                <a href="../blog.html">Blog</a>
+                <a href="../curriculum.html">Currículo</a>
+                <a href="../about.html">Eu</a>
+                <a href="../contact.html">Contato</a>
+                <a href="../receitas.html">Receitas</a>
+            </nav>
+            <div class="sidebar-social" aria-label="Redes sociais">
+                <a href="#"><span class="material-symbols-outlined" aria-hidden="true">public</span></a>
+                <a href="#"><span class="material-symbols-outlined" aria-hidden="true">share</span></a>
+                <a href="#"><span class="material-symbols-outlined" aria-hidden="true">groups</span></a>
+                <button class="theme-toggle-social" type="button" aria-label="Ativar tema Dracula" aria-pressed="false">
+                    <span class="material-symbols-outlined theme-toggle-icon" aria-hidden="true">dark_mode</span>
+                </button>
+            </div>
+        </aside>
+
+        <div class="backdrop" hidden></div>
+
+        <main class="content">
+            <article style="max-width: 800px; margin: 0 auto; padding: 20px;">
+                <p style="color: #666; text-transform: uppercase; font-size: 14px;">Pets</p>
+                <h1>Murisca: A gata manhosa</h1>
+                
+                <div style="font-size: 17px; line-height: 1.8; margin-bottom: 40px;">
+                    <p>A Murisca se considera como minha dona. Sempre que eu vou fazer algo e ela quer atenção, ela encontra uma maneira estratégica de me chamar, nunca miando, ela vai achar um jeito de chamar minha atenção não importa como.</p>
+                </div>
+
+                <hr style="border: 0; border-top: 1px solid #ddd; margin-bottom: 30px;">
+
+                <h3>Galeria de Fotos da Murisca</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 20px;">
+                    <img src="../assets/img/murisca.jpeg" alt="Murisca foto 1" style="width: 100%; border-radius: 8px; object-fit: cover; height: 250px;" />
+                    <img src="../assets/img/murisca-colo.jpeg" alt="Gato dengoso" style="width: 100%; border-radius: 8px; object-fit: cover; height: 250px;" />
+                    <img src="../assets/img/murisca-perfil.jpeg" alt="Gato desconfiado" style="width: 100%; border-radius: 8px; object-fit: cover; height: 250px;" />
+                    <img src="../assets/img/murisca-sofa.jpeg" alt="Gato manhoso" style="width: 100%; border-radius: 8px; object-fit: cover; height: 250px;" />
+                
+                </div>
+            </article>
+        </main>
+    </div>
+
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Voltar ao topo">
+        <span class="material-symbols-outlined">arrow_upward</span>
+    </button>
+    
+    <div class="fab-container" aria-label="Menu de Acessibilidade">
+        <button class="fab-main" aria-label="Abrir opções"><img src="../assets/img/eye.jpg" alt="Olho de dragao" /></button>
+        <div class="fab-options">
+            <button id="decrease-font" class="fab-btn"><span class="material-symbols-outlined">text_decrease</span></button>
+            <button id="increase-font" class="fab-btn"><span class="material-symbols-outlined">text_increase</span></button>
+            <button id="toggle-theme-fab" class="fab-btn"><span class="material-symbols-outlined theme-toggle-icon-fab">dark_mode</span></button>
+        </div>
+    </div>
+    
+    <button id="back-btn" class="back-btn" aria-label="Voltar ou fechar página">
+        <span class="material-symbols-outlined">arrow_back</span>
+    </button>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

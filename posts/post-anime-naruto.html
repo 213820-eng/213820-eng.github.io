@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Resenha: Naruto - Blog Lucas Godoy</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL,GRAD@400,0,0" />
+    <link rel="icon" href="../assets/img/rinne.jpg" type="image/png" />
+    <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body>
+    <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="sidebar">
+        <span></span><span></span><span></span>
+    </button>
+
+    <div class="layout">
+        <aside class="sidebar" id="sidebar">
+            <div class="brand">Lucas E Godoy</div>
+            <div class="sidebar-hero">
+                <img src="../assets/img/murisca.jpeg" alt="Foto de perfil da minha gata Murisca deitada" />
+            </div>
+            <nav class="sidebar-nav" aria-label="Menu principal">
+                <a href="../index.html">Home</a>
+                <a href="../blog.html">Blog</a>
+                <a href="../curriculum.html">Currículo</a>
+                <a href="../about.html">Eu</a>
+                <a href="../contact.html">Contato</a>
+                <a href="../receitas.html">Receitas</a>
+            </nav>
+            <div class="sidebar-social" aria-label="Redes sociais">
+                <a href="#"><span class="material-symbols-outlined" aria-hidden="true">public</span></a>
+                <a href="#"><span class="material-symbols-outlined" aria-hidden="true">share</span></a>
+                <a href="#"><span class="material-symbols-outlined" aria-hidden="true">groups</span></a>
+                <button class="theme-toggle-social" type="button" aria-label="Ativar tema Dracula" aria-pressed="false">
+                    <span class="material-symbols-outlined theme-toggle-icon" aria-hidden="true">dark_mode</span>
+                </button>
+            </div>
+        </aside>
+
+        <div class="backdrop" hidden></div>
+
+        <main class="content">
+            <article style="max-width: 800px; margin: 0 auto; padding: 20px;">
+                <p class="post-category">Animes</p>
+                <h1 style="font-size: 32px; margin-bottom: 20px;">Naruto: A Força dos Laços e da Superação</h1>
+                <img src="../assets/img/valedofim.png" alt="Ninja" style="width: 100%; border-radius: 8px; margin-bottom: 30px;" />
+                
+                <div style="line-height: 1.8; font-size: 17px;">
+                    <p>Oi pessoal, tudo bem? Hoje vou falar de um clássico absoluto que marcou a minha infância e continua sendo um dos meus grandes amores no mundo dos animes: Naruto!</p>
+                    
+                    <blockquote style="background: var(--surface-strong); padding: 15px; border-left: 5px solid var(--category-text); margin: 20px 0; border-radius: 4px;">
+                        <strong>Sinopse:</strong> Naruto Uzumaki é um jovem órfão rejeitado pelos moradores de sua própria vila por carregar dentro de si a Raposa de Nove Caudas, um monstro que quase destruiu o local no passado. Determinado a quebrar o preconceito e ser reconhecido por todos, Naruto treina para se tornar um ninja e alcançar o posto máximo de Hokage, o líder da Vila da Folha.
+                    </blockquote>
+
+                    <p>O que torna Naruto tão cativante não são apenas os combates ninja fantásticos ou as estratégias mirabolantes. O verdadeiro coração dessa obra está na empatia e na dor compartilhada. A dinâmica entre o Naruto e o Sasuke é uma das construções de rivalidade e amizade mais duradouras da cultura pop.</p>
+                    
+                    <p>Mesmo lidando com problemas de ritmo e excesso de preenchimentos (fillers) ao longo de suas sagas clássica e Shippuden, arcos incríveis como a invasão de Pain ou a história secreta de Itachi Uchiha elevam o anime a patamares emocionantes incomparáveis. É uma jornada inesquecível sobre nunca desistir do seu caminho ninja!</p>
+                    
+                    <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 30px 0;">
+                    
+                    <h3 style="margin-bottom: 10px;">Ficha Técnica</h3>
+                    <ul style="list-style: none; padding: 0; font-size: 15px; color: var(--muted-text);">
+                        <li><strong>Título original:</strong> Naruto / Naruto Shippuden</li>
+                        <li><strong>Ano de lançamento:</strong> 2002 / 2007</li>
+                        <li><strong>Direção:</strong> Hayato Date</li>
+                        <li><strong>Criador original:</strong> Masashi Kishimoto</li>
+                    </ul>
+                </div>
+            </article>
+        </main>
+    </div>
+
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Voltar ao topo">
+        <span class="material-symbols-outlined">arrow_upward</span>
+    </button>
+    
+    <div class="fab-container" aria-label="Menu de Acessibilidade">
+        <button class="fab-main" aria-label="Abrir opções"><img src="../assets/img/eye.jpg" alt="Olho de dragao" /></button>
+        <div class="fab-options">
+            <button id="decrease-font" class="fab-btn"><span class="material-symbols-outlined">text_decrease</span></button>
+            <button id="increase-font" class="fab-btn"><span class="material-symbols-outlined">text_increase</span></button>
+            <button id="toggle-theme-fab" class="fab-btn"><span class="material-symbols-outlined theme-toggle-icon-fab">dark_mode</span></button>
+        </div>
+    </div>
+
+    <button id="back-btn" class="back-btn" aria-label="Voltar ou fechar página">
+        <span class="material-symbols-outlined">arrow_back</span>
+    </button>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
